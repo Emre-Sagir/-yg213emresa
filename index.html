@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anadolu Üniversitesi Arka Yüz Yazılım Geliştirme öğrencisi — kişisel portfolyo sitesi. Projeler, yetenekler ve iletişim bilgileri." />
+  <meta name="theme-color" content="#05080f" />
+  <title>Emre Sa · Anadolu Üniversitesi — Yazılım Geliştirme Öğrencisi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+  <!-- ============ KARLI DAĞ SAHNESİ (dekoratif) ============ -->
+  <div class="bg-scene" aria-hidden="true">
+    <span class="scene-sky"></span>
+    <span class="scene-aurora scene-aurora--a"></span>
+    <span class="scene-aurora scene-aurora--b"></span>
+    <span class="scene-stars"></span>
+    <span class="scene-moon"></span>
+
+    <!-- Uzak sıra: karla kaplı, puslu zirveler -->
+    <svg class="range range--far" viewBox="0 0 1440 420" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <linearGradient id="farFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#eff9ff" stop-opacity=".55" />
+          <stop offset=".42" stop-color="#9cbcda" stop-opacity=".32" />
+          <stop offset="1" stop-color="#3f5f7e" stop-opacity=".18" />
+        </linearGradient>
+        <linearGradient id="farEdge" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#eaf6ff" stop-opacity=".06" />
+          <stop offset=".5" stop-color="#f8fdff" stop-opacity=".55" />
+          <stop offset="1" stop-color="#eaf6ff" stop-opacity=".08" />
+        </linearGradient>
+        <filter id="farSoft" x="-5%" y="-20%" width="110%" height="140%">
+          <feGaussianBlur stdDeviation="0.7" />
+        </filter>
+      </defs>
+      <path fill="url(#farFill)" d="M0,318 L48,296 L88,306 L136,252 L168,270 L206,212 L238,244 L272,228 L312,272 L348,250 L386,288 L418,262 L452,230 L484,254 L520,214 L548,236 L582,196 L610,224 L638,210 L672,252 L704,236 L738,272 L772,246 L806,282 L840,206 L868,236 L896,222 L928,266 L960,244 L992,286 L1024,258 L1056,292 L1092,260 L1124,296 L1158,254 L1190,280 L1224,238 L1256,266 L1290,224 L1322,250 L1356,216 L1388,246 L1420,232 L1440,240 L1440,420 L0,420 Z" />
+      <path fill="none" stroke="url(#farEdge)" stroke-width="1.6" filter="url(#farSoft)" d="M0,318 L48,296 L88,306 L136,252 L168,270 L206,212 L238,244 L272,228 L312,272 L348,250 L386,288 L418,262 L452,230 L484,254 L520,214 L548,236 L582,196 L610,224 L638,210 L672,252 L704,236 L738,272 L772,246 L806,282 L840,206 L868,236 L896,222 L928,266 L960,244 L992,286 L1024,258 L1056,292 L1092,260 L1124,296 L1158,254 L1190,280 L1224,238 L1256,266 L1290,224 L1322,250 L1356,216 L1388,246 L1420,232 L1440,240" />
+      <g fill="#f4fbff" opacity=".52">
+        <path d="M206,212 L224,238 L215,232 L206,242 L197,232 L188,238 Z" />
+        <path d="M520,214 L538,240 L529,234 L520,244 L511,234 L502,240 Z" />
+        <path d="M582,196 L601,224 L591,217 L582,228 L573,217 L563,224 Z" />
+        <path d="M840,206 L858,232 L849,226 L840,236 L831,226 L822,232 Z" />
+        <path d="M1356,216 L1373,241 L1364,235 L1356,244 L1348,235 L1339,241 Z" />
+        <path d="M136,252 L150,274 L143,269 L136,278 L129,269 L122,274 Z" />
+        <path d="M1290,224 L1304,245 L1298,240 L1290,249 L1282,240 L1276,245 Z" />
+      </g>
+    </svg>
+
+    <span class="scene-mist scene-mist--high"></span>
+
+    <!-- Orta sıra -->
+    <svg class="range range--mid" viewBox="0 0 1440 420" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <linearGradient id="midFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2a4c6d" stop-opacity=".96" />
+          <stop offset=".52" stop-color="#122538" stop-opacity="1" />
+          <stop offset="1" stop-color="#08121d" stop-opacity="1" />
+        </linearGradient>
+        <linearGradient id="midEdge" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#d7edff" stop-opacity=".04" />
+          <stop offset=".5" stop-color="#d7edff" stop-opacity=".28" />
+          <stop offset="1" stop-color="#d7edff" stop-opacity=".04" />
+        </linearGradient>
+        <filter id="midSoft" x="-5%" y="-20%" width="110%" height="140%">
+          <feGaussianBlur stdDeviation="1" />
+        </filter>
+      </defs>
+      <path fill="url(#midFill)" d="M0,354 L60,326 L118,342 L182,266 L226,300 L274,272 L324,322 L372,292 L424,338 L478,258 L520,290 L566,240 L612,292 L660,266 L712,326 L764,282 L818,334 L872,268 L918,304 L966,252 L1012,300 L1062,276 L1110,330 L1160,292 L1212,336 L1266,290 L1320,338 L1374,300 L1440,326 L1440,420 L0,420 Z" />
+      <path fill="none" stroke="url(#midEdge)" stroke-width="1.2" filter="url(#midSoft)" d="M0,354 L60,326 L118,342 L182,266 L226,300 L274,272 L324,322 L372,292 L424,338 L478,258 L520,290 L566,240 L612,292 L660,266 L712,326 L764,282 L818,334 L872,268 L918,304 L966,252 L1012,300 L1062,276 L1110,330 L1160,292 L1212,336 L1266,290 L1320,338 L1374,300 L1440,326" />
+      <g fill="#eaf7ff" opacity=".14">
+        <path d="M566,240 L582,263 L574,257 L566,267 L558,257 L550,263 Z" />
+        <path d="M478,258 L494,280 L486,274 L478,284 L470,274 L462,280 Z" />
+        <path d="M966,252 L981,274 L973,268 L966,278 L958,268 L951,274 Z" />
+        <path d="M182,266 L197,288 L189,282 L182,292 L174,282 L167,288 Z" />
+      </g>
+    </svg>
+
+    <span class="scene-mist scene-mist--low"></span>
+
+    <!-- Yakın sıra: neredeyse siyah siluet -->
+    <svg class="range range--near" viewBox="0 0 1440 420" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <linearGradient id="nearFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0a131e" />
+          <stop offset="1" stop-color="#03060b" />
+        </linearGradient>
+      </defs>
+      <path fill="url(#nearFill)" d="M0,398 L70,382 L130,392 L196,356 L252,380 L316,350 L378,388 L442,364 L506,396 L572,370 L636,398 L704,376 L766,402 L834,382 L902,404 L974,384 L1042,406 L1112,388 L1182,408 L1252,392 L1322,410 L1392,396 L1440,406 L1440,420 L0,420 Z" />
+      <path fill="none" stroke="rgba(190,220,245,.16)" stroke-width="1" d="M0,398 L70,382 L130,392 L196,356 L252,380 L316,350 L378,388 L442,364 L506,396 L572,370 L636,398 L704,376 L766,402 L834,382 L902,404 L974,384 L1042,406 L1112,388 L1182,408 L1252,392 L1322,410 L1392,396 L1440,406" />
+    </svg>
+
+    <div class="snowfall"></div>
+    <div class="snowfall snowfall--near"></div>
+    <span class="scene-shade"></span>
+    <span class="scene-vignette"></span>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">ÖYG<em>213</em></span>
+      </a>
+
+      <!-- Saf CSS mobil menü (checkbox hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Menüyü aç/kapat">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-menu" aria-label="Ana menü">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#egitim">Eğitim</a>
+        <a href="#yetenekler">Yetenekler</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#iletisim" class="nav-cta">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-badge reveal">
+          <span class="pulse-dot"></span>
+          Yeni projelere açık
+        </p>
+
+        <h1 class="hero-title reveal delay-1">
+          Merhaba, ben <span class="metal-text">Emre Sa</span>
+        </h1>
+
+        <h2 class="hero-subtitle reveal delay-2">
+          Anadolu Üniversitesi — <span class="highlight">Yazılım Geliştirme</span> Öğrencisi
+        </h2>
+
+        <p class="hero-desc reveal delay-3">
+          Arka yüz (back-end) yazılım geliştirme alanında öğrenime odaklanıyor;
+          modern web teknolojileriyle hızlı, ölçeklenebilir ve şık dijital
+          ürünler inşa ediyorum. Kod yazmayı, öğrenmeyi ve yeni şeyler denemeyi seviyorum.
+        </p>
+
+        <div class="hero-actions reveal delay-4">
+          <a href="#projeler" class="btn btn-primary">
+            Projelerimi Keşfet
+            <svg viewBox="0 0 24 24" class="btn-ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#iletisim" class="btn btn-ghost">İletişime Geç</a>
+        </div>
+
+        <dl class="hero-stats reveal delay-5">
+          <div class="stat">
+            <dt>Odak</dt>
+            <dd>Back-End</dd>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <dt>Öğrenme</dt>
+            <dd>Her gün</dd>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <dt>Yaklaşım</dt>
+            <dd>Detay odaklı</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-aside" aria-hidden="true">
+        <span class="hero-aside-line"></span>
+        <span class="hero-aside-label">Anadolu · 792 m</span>
+      </div>
+
+      <a href="#hakkimda" class="scroll-hint" aria-label="Aşağı kaydır">
+        <span class="scroll-line"><i></i></span>
+        <span class="scroll-label">Keşfet</span>
+      </a>
+    </section>
+
+    <!-- ============ HAKKIMDA ============ -->
+    <section id="hakkimda" class="section" data-ghost="01">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-kicker">01 — Hakkımda</span>
+          <h2 class="section-title">Öğrenci, geliştirici, <span class="metal-text">meraklı zihin</span></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Anadolu Üniversitesi'nde <strong>Arka Yüz Yazılım Geliştirme</strong> okuyorum.
+              Yazılımın görünmeyen tarafını — sunucuları, veritabanlarını ve API'leri —
+              anlamaya ve bu alanda sağlam ürünler geliştirmeye odaklanıyorum.
+            </p>
+            <p>
+              Derslerde öğrendiklerimi kişisel projelerle pekiştiriyor; temiz kod,
+              iyi dokümantasyon ve kullanıcı deneyimine saygı gibi değerleri önemsiyorum.
+              Amacım, eğitimimi gerçek projelerle birleştirerek sektörde söz sahibi
+              bir yazılımcı olmak.
+            </p>
+            <ul class="about-list">
+              <li>Ölçeklenebilir back-end mimarileri</li>
+              <li>RESTful API tasarımı ve entegrasyonu</li>
+              <li>Veritabanı modelleme ve optimizasyon</li>
+              <li>Sürüm kontrolü (Git) ve takım çalışması</li>
+            </ul>
+          </div>
+
+          <aside class="about-card card">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <h3>Kısa Bilgiler</h3>
+            <ul class="info-list">
+              <li><span>Üniversite</span><strong>Anadolu Üniversitesi</strong></li>
+              <li><span>Bölüm</span><strong>Yazılım Geliştirme</strong></li>
+              <li><span>Alan</span><strong>Arka Yüz / Back-End</strong></li>
+              <li><span>Konum</span><strong>Türkiye</strong></li>
+              <li><span>Diller</span><strong>Türkçe, İngilizce</strong></li>
+            </ul>
+            <a href="#iletisim" class="btn btn-ghost btn-block">CV İndir / İletişim</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EĞİTİM ============ -->
+    <section id="egitim" class="section section--alt" data-ghost="02">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-kicker">02 — Eğitim</span>
+          <h2 class="section-title">Akademik <span class="metal-text">yolculuk</span></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-head">
+              <h3>Anadolu Üniversitesi</h3>
+              <span class="timeline-date">Devam ediyor</span>
+            </div>
+            <p class="timeline-role">Arka Yüz Yazılım Geliştirme</p>
+            <p class="timeline-desc">
+              Sunucu taraflı programlama, veritabanı yönetimi, web servisleri ve
+              uygulama mimarisi üzerine dersler alıyor; teorik bilgimi kişisel
+              projelerle uygulamaya dönüştürüyorum.
+            </p>
+          </li>
+
+          <li class="timeline-item card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-head">
+              <h3>Sertifikalar &amp; Kendi Kendine Öğrenme</h3>
+              <span class="timeline-date">Sürekli</span>
+            </div>
+            <p class="timeline-role">Çevrim içi eğitimler ve belgeler</p>
+            <p class="timeline-desc">
+              Udemy, freeCodeCamp ve resmî dokümantasyonlar üzerinden web
+              geliştirme, altyapı ve veritabanı konularında sürekli eğitim alıyorum.
+            </p>
+          </li>
+
+          <li class="timeline-item card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-head">
+              <h3>Ortaöğretim</h3>
+              <span class="timeline-date">Tamamlandı</span>
+            </div>
+            <p class="timeline-role">Genel Lise</p>
+            <p class="timeline-desc">
+              Bilgisayar ve teknolojiye olan ilgimin başladığı, ilk web sayfalarımı
+              yazdığım dönem.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ YETENEKLER ============ -->
+    <section id="yetenekler" class="section" data-ghost="03">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-kicker">03 — Yetenekler</span>
+          <h2 class="section-title">Kullandığım <span class="metal-text">teknolojiler</span></h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="skill-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6M13 4l-2 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Back-End</h3>
+            <p>Node.js, Python, PHP temelleri; REST API tasarımı ve sunucu mantığı.</p>
+            <div class="chip-row">
+              <span class="chip">Node.js</span>
+              <span class="chip">Python</span>
+              <span class="chip">PHP</span>
+              <span class="chip">REST</span>
+            </div>
+          </article>
+
+          <article class="skill-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="skill-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <h3>Veritabanı</h3>
+            <p>İlişkisel ve ilişkisel olmayan veritabanlarında modelleme ve sorgu.</p>
+            <div class="chip-row">
+              <span class="chip">MySQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="skill-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="skill-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Front-End</h3>
+            <p>Modern, duyarlı ve erişilebilir arayüzler; temiz HTML &amp; CSS.</p>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Responsive</span>
+            </div>
+          </article>
+
+          <article class="skill-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <span class="skill-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 8.5v7M8.5 6h4a3 3 0 013 3v.5M8.5 18h4a3 3 0 003-3v-.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Araçlar</h3>
+            <p>Versiyon kontrolü, dağıtım ve düzenli geliştirme ortamı.</p>
+            <div class="chip-row">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Linux</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="skill-bars">
+          <div class="bar reveal-up">
+            <div class="bar-top"><span>Back-End Geliştirme</span><span>%80</span></div>
+            <div class="bar-track"><i style="--w:80%"></i></div>
+          </div>
+          <div class="bar reveal-up">
+            <div class="bar-top"><span>Veritabanı Yönetimi</span><span>%70</span></div>
+            <div class="bar-track"><i style="--w:70%"></i></div>
+          </div>
+          <div class="bar reveal-up">
+            <div class="bar-top"><span>HTML / CSS</span><span>%85</span></div>
+            <div class="bar-track"><i style="--w:85%"></i></div>
+          </div>
+          <div class="bar reveal-up">
+            <div class="bar-top"><span>JavaScript</span><span>%65</span></div>
+            <div class="bar-track"><i style="--w:65%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJELER ============ -->
+    <section id="projeler" class="section section--alt" data-ghost="04">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-kicker">04 — Projeler</span>
+          <h2 class="section-title">Üzerinde çalıştıklarım <span class="metal-text">projeler</span></h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="project-top">
+              <span class="project-num">01</span>
+              <div class="project-links">
+                <a href="#" aria-label="Proje demosu">Demo</a>
+                <a href="#" aria-label="Proje kaynak kodu">Kod</a>
+              </div>
+            </div>
+            <h3>API Gateway Örneği</h3>
+            <p>
+              Node.js ile yazılmış, çoklu servis isteklerini yöneten basit bir API
+              geçidi. Kimlik doğrulama, hız sınırlandırma ve loglama içerir.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">JWT</span>
+            </div>
+          </article>
+
+          <article class="project-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <div class="project-links">
+                <a href="#" aria-label="Proje demosu">Demo</a>
+                <a href="#" aria-label="Proje kaynak kodu">Kod</a>
+              </div>
+            </div>
+            <h3>Kütüphane Yönetim Sistemi</h3>
+            <p>
+              Kitap ödünç/teslim işlemlerini, üye kayıtlarını ve raporlamayı
+              yöneten MySQL tabanlı bir web uygulaması.
+            </p>
+            <div class="chip-row">
+              <span class="chip">PHP</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Bootstrap</span>
+            </div>
+          </article>
+
+          <article class="project-card card reveal-up">
+            <div class="card-sheen" aria-hidden="true"></div>
+            <div class="project-top">
+              <span class="project-num">03</span>
+              <div class="project-links">
+                <a href="#" aria-label="Proje demosu">Demo</a>
+                <a href="#" aria-label="Proje kaynak kodu">Kod</a>
+              </div>
+            </div>
+            <h3>Hava Durumu CLI</h3>
+            <p>
+              Python ile geliştirilmiş, çevrim içi servislerden veri çekip
+              terminalde şık gösteren komut satırı uygulaması.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">REST API</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects-note">
+          Daha fazlası için <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> profilime göz atabilirsiniz.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ İLETİŞİM ============ -->
+    <section id="iletisim" class="section" data-ghost="05">
+      <div class="container">
+        <div class="contact card">
+          <div class="card-sheen" aria-hidden="true"></div>
+          <header class="section-head section-head--center">
+            <span class="section-kicker">05 — İletişim</span>
+            <h2 class="section-title">Birlikte <span class="metal-text">çalışalım</span></h2>
+            <p class="section-lead">
+              Staj, proje iş birliği ya da sadece sohbet için bana ulaşın.
+              Mesajlarınıza en kısa sürede dönüş yapıyorum.
+            </p>
+          </header>
+
+          <div class="contact-actions">
+            <a href="mailto:ornek@eposta.com" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" class="btn-ico" aria-hidden="true"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              ornek@eposta.com
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="yil">2026</span> Emre Sa — Anadolu Üniversitesi · Yazılım Geliştirme Öğrencisi</p>
+      <a href="#top" class="to-top" aria-label="Sayfa başına dön">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Küçük iyileştirmeler (framework yok, saf JS)
+    document.getElementById('yil').textContent = new Date().getFullYear();
+
+    const azaltHareket = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Scroll ile ortaya çıkma animasyonu
+    const io = new IntersectionObserver((girisler) => {
+      girisler.forEach((g) => {
+        if (g.isIntersecting) {
+          g.target.classList.add('in-view');
+          io.unobserve(g.target);
+        }
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal-up, .bar').forEach((el) => io.observe(el));
+
+    const nav = document.querySelector('.navbar');
+    const cubuk = document.querySelector('.scroll-progress i');
+    const sahne = document.querySelector('.bg-scene');
+    let bekliyor = false;
+
+    function guncelle() {
+      const y = window.scrollY;
+      nav.classList.toggle('is-scrolled', y > 24);
+
+      const oran = Math.min(y / Math.max(document.body.scrollHeight - innerHeight, 1), 1);
+      cubuk.style.transform = 'scaleX(' + oran + ')';
+
+      // Dağ katmanları için yumuşak paralaks ve batma efekti
+      if (sahne && !azaltHareket) {
+        const derinlik = Math.min(y / 900, 1);
+        sahne.style.setProperty('--sy', derinlik.toFixed(3));
+        sahne.style.setProperty('--dim', (derinlik * 0.55).toFixed(3));
+      }
+      bekliyor = false;
+    }
+
+    addEventListener('scroll', () => {
+      if (!bekliyor) { bekliyor = true; requestAnimationFrame(guncelle); }
+    }, { passive: true });
+    guncelle();
+
+    // İmleçle hafif derinlik (yalnızca geniş ekran + hareket hassasiyeti yoksa)
+    if (sahne && !azaltHareket && matchMedia('(pointer: fine)').matches) {
+      addEventListener('mousemove', (e) => {
+        const x = (e.clientX / innerWidth - 0.5) * 2;
+        sahne.style.setProperty('--mx', x.toFixed(3));
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html>
